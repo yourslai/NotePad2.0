@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/note_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+    <ImageButton
+        android:id="@+id/initiate_button"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/empty_button"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/back_to_normal_mode"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/collection_button"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:alpha="0.7"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBar</item>
+    </style>
+    <style name="AppThemeOne" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryOne</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOne</item>
+        <item name="colorAccent">@color/colorAccentOne</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarOne</item>
+    </style>
+    <style name="AppThemeTwo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTwo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTwo</item>
+        <item name="colorAccent">@color/colorAccentTwo</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarTwo</item>
+    </style>
+    <style name="AppThemeThree" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryThree</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkThree</item>
+        <item name="colorAccent">@color/colorAccentThree</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarThree</item>
+    </style>
+
+    <style name="AppThemeFour" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryFour</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkFour</item>
+        <item name="colorAccent">@color/colorAccentFour</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarFour</item>
+    </style>
+    <style name="AppThemeFive" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryFive</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkFive</item>
+        <item name="colorAccent">@color/colorAccentFive</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarFive</item>
+    </style>
+    <style name="AppThemeSix" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimarySix</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkSix</item>
+        <item name="colorAccent">@color/colorAccentSix</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarSix</item>
+    </style>
+    <style name="AppThemeSeven" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentSeven</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBar</item>
+    </style>
+    <style name="AppThemeEight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryFour</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkFour</item>
+        <item name="colorAccent">@color/colorAccentFour</item>
+        <item name="actionOverflowMenuStyle">@style/customerActionBarFour</item>
+    </style>
+
+
+    <style name="EditTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/pink</item>
+        <item name="colorControlActivated">@color/pinkActivated</item>
+    </style>
+    <style name="EditTextStyleOne" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+
+    <style name="otherDialogs" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="colorAccent">@color/styleColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="photoDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorAccent">@color/pinkActivated</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <dimen name="dp_80">80dp</dimen>
+
+    <style name="customerActionBar" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="customerActionBarOne" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryOne</item>
+    </style>
+
+    <style name="customerActionBarTwo" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryTwo</item>
+    </style>
+
+    <style name="customerActionBarThree" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryThree</item>
+    </style>
+
+    <style name="customerActionBarFour" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryFour</item>
+    </style>
+
+    <style name="customerActionBarFive" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryFive</item>
+    </style>
+
+    <style name="customerActionBarSix" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimarySix</item>
+    </style>
+    <style name="customerActionBarSeven" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+    <style name="customerActionBarEight" parent="Widget.AppCompat.Light.PopupMenu.Overflow" >
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimaryFour</item>
+    </style>
+
+</resources>

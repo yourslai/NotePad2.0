@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#F8CCD8</color>
+    <color name="colorPrimary">#F8D5E0</color>
+    <color name="colorAccent">#20D1D1</color>
+
+    <color name="colorPrimaryDarkOne">#9AB6CE</color>
+    <color name="colorPrimaryOne">#B2C7E1</color>
+    <color name="colorAccentOne">#6A6CF3</color>
+
+    <color name="colorPrimaryDarkTwo">#A2C4E1</color>
+    <color name="colorPrimaryTwo">#97BDDC</color>
+    <color name="colorAccentTwo">#18C1D5</color>
+
+    <color name="colorPrimaryDarkThree">#5C916A</color>
+    <color name="colorPrimaryThree">#7FBD8D</color>
+    <color name="colorAccentThree">#95CE8F</color>
+
+    <color name="colorPrimaryDarkFour">#C4D6FA</color>
+    <color name="colorPrimaryFour">#C7D7EC</color>
+    <color name="colorAccentFour">#5F97D2</color>
+
+    <color name="colorPrimaryDarkFive">#3F4364</color>
+    <color name="colorPrimaryFive">#3A406B</color>
+    <color name="colorAccentFive">#CBB1D8</color>
+
+    <color name="colorAccentSeven">#EAB1F0</color>
+    <color name="ButtonColorSeven">#F9D6FF</color>
+
+    <color name="colorPrimaryDarkSix">#1E1E22</color>
+    <color name="colorPrimarySix">#1B1B1E</color>
+    <color name="colorAccentSix">#BBC9CE</color>
+    <color name="buttonColorDefault">#D8FEF6</color>
+    <color name="buttonColorThree">#BDE8BB</color>
+    <color name="buttonColorSix">#B3B3B3</color>
+    <color name="buttonColorOne">#DADDFF</color>
+    <color name="textColorDefault">#489495</color>
+    <color name="buttonTextColorFive">#3C4C63</color>
+    <color name="textColorThree">#345832</color>
+    <color name="textColorSix">#8C9494</color>
+    <color name="textColorFour">#8C9494</color>
+    <color name="buttonTextColorSix">#3A3A3A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#B3A3A3</color>
+    <color name="textColor2">#B3A3A3</color>
+    <color name="pinkActivated">#B8B8B8</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#DBDDE1</color>
+    <color name="styleColor">#F3D9FB</color>
+    <color name="red">#940A29</color>
+    <color name="gray">#716E6E</color>
+</resources>
