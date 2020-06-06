@@ -304,7 +304,7 @@ public class NoteListFragment extends Fragment {
         private TextView mTitleTextView;
         private TextView mDateTextView;
         private Note mNote;
-        private ImageView mSolvedImageView;
+        private ImageView mLikedImageView;
         private RoundedImageView mIconImageView;
         private File mPhotoFile;
         private CheckBox deleteBox;
@@ -338,61 +338,61 @@ public class NoteListFragment extends Fragment {
                     mTitleTextView.setTextColor(getResources().getColor(R.color.white));
                     mDateTextView.setTextColor(getResources().getColor(R.color.white));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 1:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.white));
                     mDateTextView.setTextColor(getResources().getColor(R.color.white));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 2:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.white));
                     mDateTextView.setTextColor(getResources().getColor(R.color.white));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 3:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.textColorThree));
                     mDateTextView.setTextColor(getResources().getColor(R.color.textColorThree));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 4:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.textColorFour));
                     mDateTextView.setTextColor(getResources().getColor(R.color.textColorFour));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 5:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.white));
                     mDateTextView.setTextColor(getResources().getColor(R.color.white));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 6:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.textColorSix));
                     mDateTextView.setTextColor(getResources().getColor(R.color.textColorSix));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 7:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.gray));
                     mDateTextView.setTextColor(getResources().getColor(R.color.gray));
                     Glide.with(getActivity()).load(R.drawable.heart).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
                 case 8:
                     mTitleTextView.setTextColor(getResources().getColor(R.color.gray));
                     mDateTextView.setTextColor(getResources().getColor(R.color.gray));
                     Glide.with(getActivity()).load(R.drawable.koeni_logo).diskCacheStrategy(DiskCacheStrategy.NONE).
-                            into(mSolvedImageView);
+                            into(mLikedImageView);
                     break;
             }
             updateDate();
 
 
-            mSolvedImageView.setVisibility(note.isLiked()? View.VISIBLE: View.GONE);
+            mLikedImageView.setVisibility(note.isLiked()? View.VISIBLE: View.GONE);
         }
 
         public NoteHolder(LayoutInflater inflater, ViewGroup parent){
@@ -401,7 +401,7 @@ public class NoteListFragment extends Fragment {
             itemView.setOnLongClickListener(this);
             mTitleTextView=itemView.findViewById(R.id.note_title);
             mDateTextView=itemView.findViewById(R.id.note_date);
-            mSolvedImageView=itemView.findViewById(R.id.note_liked);
+            mLikedImageView =itemView.findViewById(R.id.note_liked);
             mIconImageView= itemView.findViewById(R.id.icon_image);
             deleteBox=itemView.findViewById(R.id.delete);
         }
@@ -527,7 +527,7 @@ public class NoteListFragment extends Fragment {
             noteHolder.deleteBox.setChecked(false);
             if (mInDeleteMode){
                 setHasOptionsMenu(false);
-                noteHolder.mSolvedImageView.setOnClickListener(new View.OnClickListener() {
+                noteHolder.mLikedImageView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Toast toast= Toast.makeText(getActivity(),null, Toast.LENGTH_SHORT);
@@ -547,7 +547,7 @@ public class NoteListFragment extends Fragment {
                 });
             }else {
               exitDeleteMode();
-              noteHolder.mSolvedImageView.setOnClickListener(new View.OnClickListener() {
+              noteHolder.mLikedImageView.setOnClickListener(new View.OnClickListener() {
                   @Override
                   public void onClick(View view) {
                       Intent intent= NotePagerActivity.newIntent(getActivity(),note.getId());
