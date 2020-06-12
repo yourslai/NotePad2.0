@@ -265,7 +265,7 @@ public class NoteFragment extends Fragment {
                     toast.show();
                 }else {
                     Uri uri= FileProvider.getUriForFile(getActivity(),
-                            "com.example.criminalintent2.fileprovider",mPhotoFile);
+                            "com.example.notepad20.fileprovider",mPhotoFile);
                     captureImage.putExtra(MediaStore.EXTRA_OUTPUT,uri);
 
                     List<ResolveInfo> cameraActivities=getActivity().getPackageManager().queryIntentActivities(
@@ -518,7 +518,7 @@ public class NoteFragment extends Fragment {
         }
         if (requestCode==REQUEST_PHOTO){
             Uri uri= FileProvider.getUriForFile(getActivity(),
-                    "com.example.criminalintent2.fileprovider",mPhotoFile);
+                    "com.example.notepad20.fileprovider",mPhotoFile);
             getActivity().revokeUriPermission(uri, Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
             updatePhotoView();
         }
