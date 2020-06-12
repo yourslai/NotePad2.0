@@ -48,7 +48,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 public class NoteFragment extends Fragment {
-    private static final String ARG_CRIME_ID="crime_id";
+    private static final String ARG_NOTE_ID="note_id";
     private static final String DIALOG_DATE="DialogDate";
     private static final String DIALOG_TIME="DialogTime";
     private static final String DIALOG_DELETE="DialogDelete";
@@ -85,7 +85,7 @@ public class NoteFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        UUID crimeId=(UUID)getArguments().getSerializable(ARG_CRIME_ID);
+        UUID crimeId=(UUID)getArguments().getSerializable(ARG_NOTE_ID);
         mNote = NoteLab.get(getActivity()).getNote(crimeId);
         mPhotoFile= NoteLab.get(getActivity()).getPhotoFile(mNote);
         mScaleInAnimation=new ScaleInAnimation();
@@ -595,7 +595,7 @@ public class NoteFragment extends Fragment {
 
     public static NoteFragment newInstance(UUID crimeId){
         Bundle args=new Bundle();
-        args.putSerializable(ARG_CRIME_ID,crimeId);
+        args.putSerializable(ARG_NOTE_ID,crimeId);
         NoteFragment fragment=new NoteFragment();
         fragment.setArguments(args);
         return fragment;
